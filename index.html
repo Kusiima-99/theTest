@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jumia</title>
+    <style>
+        /* CSS code can go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Create a flex container to position elements */
+            flex-direction: row; /* Display elements in a row */
+        }
+        .left-container {
+            flex: 1; /* Take up 1/3 of the available width */
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .right-container {
+            flex: 2; /* Take up 2/3 of the available width */
+        }
+.orders {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.orders h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.order-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.order-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.order-item img {
+    max-width: 100px;
+    height: auto;
+}
+
+.order-item a {
+    color: orange;
+    text-decoration: none;
+}
+ </style>
+</head>
+<body>
+    <div class="left-container">
+        <div class="dropdown-content">
+            <a href="#">My Jumia Account</a>
+            <a href="#">Orders</a>
+            <a href="#">Inbox</a>
+            <a href="#">Pending Reviews</a>
+            <a href="#">Vouchers</a>
+            <a href="#">Saved Items</a>
+            <a href="#">Recently Viewed</a>
+            <a href="#">Account Management</a>
+            <a href="#">Address Book</a>
+            <a href="#">Newsletter Preferences</a>
+        </div>
+    </div>
+    <div class="right-container">
+        <header>
+            <div class="user-info">
+                <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button style="background-color: #ff6600; color: #fff;">Search</button>
+            </div>
+            <img src="user-icon.png" alt="User Icon">
+            <p>Hi Eva</p>
+            <img src="help-icon.png" alt="Help Icon">
+            <div class="cart-icon">
+                <img src="cart-icon.png" alt="Cart Icon">
+                <p>Cart</p>
+            </div>
+            </div>
+        </header>
+        <div class="orders">
+            <h2>Open Orders (22)</h2>
+            <div class="order-item">
+                <p>5 piece diaper bag - purple</p>
+            <img src="diaper-bag-image.jpg" alt="Diaper Bag Image">
+            <a href="#" style="color: orange;">See Details</a>
+        </div>
+        <div class="order-item">
+            <p>Metal foldable adjustable stand for laptop - silver</p>
+            <img src="laptop-stand-image.jpg" alt="Laptop Stand Image">
+            <a href="#" style="color: orange;">See Details</a>
+        </div>
+        <!-- Add more order items as needed -->
+    </div>    </div>
+</body>
+</html>
